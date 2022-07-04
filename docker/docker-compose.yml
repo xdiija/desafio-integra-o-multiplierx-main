@@ -1,0 +1,13 @@
+version: '3'
+services:
+ 
+  mysql:
+    image: mysql:8.0
+    container_name: mysqldesafio
+    environment:
+      - MYSQL_DATABASE=desafio_sequelize_mysql
+      - MYSQL_PASSWORD=root
+      - MYSQL_ROOT_PASSWORD=root
+      - TZ=Jaragua/Santa_Catarina
+    ports:
+      - 3306:3306
